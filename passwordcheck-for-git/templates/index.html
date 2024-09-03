@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockyou.txt password check</title>
+<body>
+    <h1>Rockyou.txt password check</h1>
+    <form method="POST" action="/check">
+        <input type="text" name="password" placeholder="Write a password" required />
+        <button type="submit">Check your password</button>
+    </form>
+    {% if result is not none %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
